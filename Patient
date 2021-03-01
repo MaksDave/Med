@@ -1,0 +1,13 @@
+public abstract class Patient {
+
+   private String ID;
+   private String color;
+   private int maxSpeed;
+
+   public abstract void gas();
+
+   public abstract void brake();
+
+   public String getModel() {
+       return model;
+   }
