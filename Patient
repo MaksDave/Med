@@ -4,6 +4,7 @@ public abstract class Patient {
    public static String surname;
    public static String name;
    public static String patronymic;
+   public static String fullName;// определяется функцией fullNameFunction 
    private String gender;
    private int age;
    private boolean underaged;
@@ -85,8 +86,9 @@ public abstract class Patient {
    public void setTelephone(String telephone) {
        this.telephone = telephone ;
    }
-   public void fullName(){
-   System.out.println(Patient.surname +Patient.name +Patient.patronymic);
+   public void fullNameFunction(){
+   fullName=(surname +" "+ name +" "+ patronymic);
+	System.out.println(fullName);
    }
    public void childOrAdult (){
 		if (age<18){
