@@ -1,5 +1,5 @@
 public abstract class Patient {
-
+public abstract void specifics ();
    private long ID;
    public static String surname;
    public static String name;
