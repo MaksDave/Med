@@ -89,11 +89,11 @@ public abstract class Patient {
    System.out.println(Patient.surname +Patient.name +Patient.patronymic);
    }
    public void childOrAdult (){
-   if (age<18){
-   System.out.println("Да");
+		if (age<18){
+   underaged=true;
    }
    else
-   System.out.println("Нет");
+   underaged=false;
    }
    
   public Patient (long ID,String surname,String name,String patronymic,String gender,int age,boolean underaged,String diagnosis,String dota,String poa,String address,String telephone ) 
